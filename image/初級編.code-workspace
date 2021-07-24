@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../Library/Mobile Documents/com~apple~CloudDocs/ZONE"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../Library/Mobile Documents/com~apple~CloudDocs/ZONE_実践"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "practice"
+	}
+}

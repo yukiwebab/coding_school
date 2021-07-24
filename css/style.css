@@ -1,0 +1,319 @@
+body{
+    color: black;
+    font-family: "Hiragino Mincho Pro",serif;
+
+}
+
+a{
+    /* ボタンの下線なくす */
+    text-decoration: none;
+    color: black;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.header{
+    background-color: black;
+    display: flex;
+}
+
+.header-logo{
+    width: 193px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.header-nav{
+    margin-left: auto;
+}
+
+.nav{
+
+}
+
+.nav-list{
+    display: flex;
+    margin-top: 28px;
+    margin-right: 25px;
+    margin-bottom: 30px;
+}
+
+.nav-item:nth-child(2){
+    margin-left: 25px;
+}
+
+.nav-item a{
+    color: white;
+    font-size: 22px;
+}
+
+/* ..は1つ上の階層 */
+.top{
+    background-image: url(../image/top-bg.png);
+    background-size: cover;
+    background-position: center;
+    height: 551px;
+}
+
+/* アラインセンターは中央寄せ */
+.top-title{
+    font-size: 60px;
+    padding-top: 240px;
+    padding-bottom: 240px;
+    text-align: center;
+}
+
+.course{
+    padding-top: 50px;
+}
+
+.inner{
+
+}
+
+.cmn-title{
+    font-size: 40px;
+    text-align: center;
+}
+
+.course-cont{
+    padding-top: 40px;
+}
+
+.course-list{
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.course-item{
+    width: 290px;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+/* 2つ目の画像から余白を開ける */
+.course-item:nth-child(n+2){
+    padding-left: 20px;
+}
+
+.course-item-img{
+
+}
+
+.course-item-text{
+    margin: 20px 10px 10px 10px;
+
+}
+
+.course-item-text p{
+    font-size: 18px;
+}
+
+.course-item-box{
+    text-align: center;
+    position: relative; /* 擬似要素？をつけるときに使用 */
+    margin-top: 48px;
+}
+
+/* SEO対策で必要 */
+.course-item-box:before{
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: #707070;
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -9px;
+
+}
+
+.course-item-box p{
+    font-size: 16px;
+}
+
+.course-item-box p:nth-child(2){
+    margin-top: 8px;
+}
+
+.course-item-btn {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.course-item-btn a {
+    box-shadow: 0px 3px 6px #00000029;
+    width: 310px;
+    font-size: 18px;
+    border: 1px solid #EEEEEE;
+    display: inline-block;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-radius: 5px;
+}
+
+.teacher{
+    padding-top: 70px;
+    padding-bottom: 45px;
+}
+
+.inner{
+
+}
+
+.cmn-title{
+
+}
+
+.teacher-cont{
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.teacher-list{
+    
+}
+
+.teacher-item{
+    display: flex;
+    /* 画像に対して中央寄せ */
+    align-items: center;
+}
+
+.teacher-item:nth-child(2){
+    margin-top: 57px;
+}
+
+.teacher-item-img{
+    width: 250px;
+}
+
+.teacher-item-text{
+    margin-left: 60px;
+    flex: 1;
+}
+
+.teacher-item-text p{
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.teacher-item-title{
+    font-size: 40px;
+}
+
+.contact{
+    background-image: url(../image/contact-bg.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.inner{
+
+}
+
+.contact-title{
+    font-size: 36px;
+    color: white;
+    text-align: center;
+}
+
+.contact-text{
+    color: white;
+    text-align: center;
+    margin-top: 53px;
+    margin-bottom: 30px;
+}
+
+.contact-text p{
+    margin-top: 20px;
+    /* 文字間の余白 */
+    line-height: 2;
+}
+
+.contact-btn{
+    text-align: center;
+}
+
+.contact-btn a{
+    background-color: tomato;
+    color: white;
+    font-size: 16px;
+    width: 210px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* 横を広げる */
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+/* スマホ対応_767px以上の時には表示させないよう調整 */
+@media only screen and (max-width: 767px) {
+    .header-nav {
+        display: none;
+    }
+
+    .top-title {
+        font-size: 26px;
+    }
+
+    .course-list {
+        display: block;
+    }
+
+    .course-item {
+        width: 100%;
+    }
+
+    .course-item:nth-child(n+2) {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .teacher-cont {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .teacher-item {
+        display: block;
+    }
+
+    .teacher-item-img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 280px;
+    }
+
+    .techer-item-text {
+        margin-left: 26px;
+        margin-right: 26px;
+    }
+
+    .teacher-item-title {
+        font-size: 24px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .course-item-text {
+        padding-bottom: 30px;
+    }
+}
